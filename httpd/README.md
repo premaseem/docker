@@ -7,16 +7,16 @@ Grab docker file from repo: https://github.com/premaseem/docker/tree/master/http
 cd to folder where DockerFile exists
 
 # Build image 
-$ docker build -t mywebsite .
-$> docker build -t <image name> .
+$ docker build -t mywebsite .    
+
 
 # Check images or search 
 $ docker images --filter reference=mywebsite
-$> docker images --filter reference=<image name> 
+
 
 # Run docker image 
-$ docker run -dit --name my-running-app -p 8083:80 mywebsite
-$ docker run -dit --name <containerId> -p 8083:80 <image name> 
+$ docker run -dit --name my-running-website -p 8083:80 mywebsite
 
-# remove container
-$ docker rm --force <container name>
+
+# remove container when done
+$ docker rm --force my-running-website
