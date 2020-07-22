@@ -16,5 +16,5 @@ RUN chmod 755 /etc/squid/squid.conf
 COPY entrypoint.sh /sbin/entrypoint.sh
 RUN chmod 755 /sbin/entrypoint.sh
 
-EXPOSE 80/tcp
+EXPOSE 3128/tcp
 ENTRYPOINT ["/sbin/entrypoint.sh"]
